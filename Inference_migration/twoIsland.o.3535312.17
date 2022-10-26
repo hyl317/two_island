@@ -1,0 +1,1162 @@
+T20
+N250
+m0.05
+Unable to init server: Could not connect: Connection refused
+Unable to init server: Could not connect: Connection refused
+
+(sim2Island.py:1461138): Gdk-CRITICAL **: 23:03:01.762: gdk_cursor_new_for_display: assertion 'GDK_IS_DISPLAY (display)' failed
+simulating two-island model with ancestral pop size 250 with split time 20 and migration rate 0.05...
+number of ibd segments: 5040
+mean of observed segments: 8.838002908127
+split time from exp fit: 18.954(18.281 - 19.627)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1.00000000e+00 5.55111512e-17]
+ [0.00000000e+00 1.00000000e+00]]
+###########################################################
+split time: 5.63(4.17 - 7.09)
+ancestral pop size: 247.81(235.87 - 259.74)
+curr_min: -15144.046030624386
+      fun: -15144.046030624386
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0007276,  0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 57
+      nit: 17
+     njev: 19
+   status: 0
+  success: True
+        x: array([  5.62944728, 247.8079771 ])
+###########################################################
+/mnt/archgen/users/yilei/IBD/analytic.py:40: RuntimeWarning: divide by zero encountered in log
+  loglik_each_bin = histogram*np.log(lambdas) - lambdas
+number of ibd segments: 4755
+mean of observed segments: 8.323320417746935
+split time from exp fit: 19.626(18.927 - 20.324)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00  5.55111512e-17]
+ [-3.55271368e-15  1.00000000e+00]]
+###########################################################
+split time: 6.76(5.45 - 8.07)
+ancestral pop size: 250.0(237.1 - 262.9)
+curr_min: -14482.762186012358
+      fun: -14482.762186012358
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.00127329, -0.0003638 ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 54
+      nit: 17
+     njev: 18
+   status: 0
+  success: True
+        x: array([  6.75770474, 249.99796626])
+###########################################################
+number of ibd segments: 4933
+mean of observed segments: 8.698539667574464
+split time from exp fit: 18.497(17.827 - 19.167)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00  5.55111512e-17]
+ [-1.77635684e-15  1.00000000e+00]]
+###########################################################
+split time: 4.42(2.58 - 6.25)
+ancestral pop size: 258.51(246.66 - 270.36)
+curr_min: -14796.41602121641
+      fun: -14796.41602121641
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0005457,  0.       ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 54
+      nit: 17
+     njev: 18
+   status: 0
+  success: True
+        x: array([  4.4159739 , 258.50990335])
+###########################################################
+number of ibd segments: 5154
+mean of observed segments: 8.744985325690266
+split time from exp fit: 18.449(17.794 - 19.105)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00 -5.55111512e-17]
+ [ 0.00000000e+00  1.00000000e+00]]
+###########################################################
+split time: 3.97(1.91 - 6.04)
+ancestral pop size: 249.79(238.63 - 260.95)
+curr_min: -15610.284965427338
+      fun: -15610.284965427338
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([ 0.0001819, -0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 144
+      nit: 21
+     njev: 48
+   status: 0
+  success: True
+        x: array([  3.97412854, 249.78658656])
+###########################################################
+number of ibd segments: 4858
+mean of observed segments: 8.687204294156608
+split time from exp fit: 18.156(17.485 - 18.826)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 3.78(1.63 - 5.94)
+ancestral pop size: 266.83(254.91 - 278.74)
+curr_min: -14336.779696656751
+      fun: -14336.779696656751
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0003638,  0.       ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 51
+      nit: 16
+     njev: 17
+   status: 0
+  success: True
+        x: array([  3.7835821, 266.8285543])
+###########################################################
+number of ibd segments: 4648
+mean of observed segments: 8.659214407886306
+split time from exp fit: 19.369(18.662 - 20.077)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00  0.00000000e+00]
+ [-3.55271368e-15  1.00000000e+00]]
+###########################################################
+split time: 6.3(4.9 - 7.7)
+ancestral pop size: 264.01(250.39 - 277.64)
+curr_min: -13722.060306971873
+      fun: -13722.060306971873
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.       , 0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 57
+      nit: 17
+     njev: 19
+   status: 0
+  success: True
+        x: array([  6.30026546, 264.01359197])
+###########################################################
+number of ibd segments: 4645
+mean of observed segments: 8.774158725411988
+split time from exp fit: 19.393(18.683 - 20.103)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1.00000000e+00 5.55111512e-17]
+ [0.00000000e+00 1.00000000e+00]]
+###########################################################
+split time: 6.27(4.85 - 7.69)
+ancestral pop size: 265.81(252.0 - 279.61)
+curr_min: -13630.248508489365
+      fun: -13630.248508489365
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0001819, -0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 72
+      nit: 17
+     njev: 24
+   status: 0
+  success: True
+        x: array([  6.26923143, 265.8068861 ])
+###########################################################
+number of ibd segments: 4735
+mean of observed segments: 8.647756456236387
+split time from exp fit: 19.556(18.853 - 20.259)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1.00000000e+00 2.77555756e-17]
+ [0.00000000e+00 1.00000000e+00]]
+###########################################################
+split time: 6.46(5.08 - 7.84)
+ancestral pop size: 256.88(243.56 - 270.2)
+curr_min: -14163.420488847945
+      fun: -14163.420488847945
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0003638,  0.       ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 123
+      nit: 22
+     njev: 41
+   status: 0
+  success: True
+        x: array([  6.46062282, 256.87777765])
+###########################################################
+number of ibd segments: 5222
+mean of observed segments: 8.801673219192933
+split time from exp fit: 18.457(17.806 - 19.109)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00 -5.55111512e-17]
+ [ 0.00000000e+00  1.00000000e+00]]
+###########################################################
+split time: 4.62(2.94 - 6.31)
+ancestral pop size: 243.67(232.75 - 254.6)
+curr_min: -15835.978986467553
+      fun: -15835.978986467553
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0001819,  0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 54
+      nit: 17
+     njev: 18
+   status: 0
+  success: True
+        x: array([  4.6220254 , 243.67030198])
+###########################################################
+number of ibd segments: 4662
+mean of observed segments: 8.527859772891848
+split time from exp fit: 18.147(17.467 - 18.826)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1.0000000e+00 0.0000000e+00]
+ [8.8817842e-16 1.0000000e+00]]
+###########################################################
+split time: 3.34(0.78 - 5.89)
+ancestral pop size: 276.01(263.8 - 288.21)
+curr_min: -13859.33587525681
+      fun: -13859.33587525681
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.00163709, 0.0005457 ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 51
+      nit: 16
+     njev: 17
+   status: 0
+  success: True
+        x: array([  3.33616404, 276.007304  ])
+###########################################################
+number of ibd segments: 4824
+mean of observed segments: 8.691470141248981
+split time from exp fit: 18.75(18.067 - 19.432)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00  5.55111512e-17]
+ [-1.77635684e-15  1.00000000e+00]]
+###########################################################
+split time: 4.94(3.26 - 6.62)
+ancestral pop size: 262.58(249.98 - 275.17)
+curr_min: -14350.620547863773
+      fun: -14350.620547863773
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0001819,  0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 57
+      nit: 18
+     njev: 19
+   status: 0
+  success: True
+        x: array([  4.93953314, 262.57612183])
+###########################################################
+number of ibd segments: 4786
+mean of observed segments: 8.659474997638574
+split time from exp fit: 19.181(18.491 - 19.872)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1.00000000e+00 5.55111512e-17]
+ [0.00000000e+00 1.00000000e+00]]
+###########################################################
+split time: 5.91(4.46 - 7.35)
+ancestral pop size: 256.4(243.6 - 269.2)
+curr_min: -14417.633349235331
+      fun: -14417.633349235331
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.00090949, 0.        ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 57
+      nit: 17
+     njev: 19
+   status: 0
+  success: True
+        x: array([  5.90843815, 256.40183067])
+###########################################################
+number of ibd segments: 5171
+mean of observed segments: 8.868085713246929
+split time from exp fit: 18.452(17.798 - 19.106)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 4.48(2.72 - 6.24)
+ancestral pop size: 246.33(235.26 - 257.41)
+curr_min: -15681.549205475769
+      fun: -15681.549205475769
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.0003638, 0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 57
+      nit: 17
+     njev: 19
+   status: 0
+  success: True
+        x: array([  4.4798856, 246.332423 ])
+###########################################################
+number of ibd segments: 4827
+mean of observed segments: 8.659376286510904
+split time from exp fit: 19.274(18.582 - 19.967)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 6.05(4.63 - 7.47)
+ancestral pop size: 255.83(243.01 - 268.66)
+curr_min: -14403.846352053692
+      fun: -14403.846352053692
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.00127329, 0.0001819 ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 51
+      nit: 16
+     njev: 17
+   status: 0
+  success: True
+        x: array([  6.04850448, 255.83145755])
+###########################################################
+number of ibd segments: 5073
+mean of observed segments: 8.738986436944497
+split time from exp fit: 18.197(17.541 - 18.853)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 3.78(1.65 - 5.9)
+ancestral pop size: 254.68(243.52 - 265.84)
+curr_min: -15226.697048040034
+      fun: -15226.697048040034
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0007276, -0.0007276])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 54
+      nit: 17
+     njev: 18
+   status: 0
+  success: True
+        x: array([  3.77596102, 254.67783904])
+###########################################################
+number of ibd segments: 4579
+mean of observed segments: 8.563408263805908
+split time from exp fit: 20.612(19.877 - 21.347)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 8.32(7.13 - 9.51)
+ancestral pop size: 249.07(235.2 - 262.95)
+curr_min: -13717.851364069025
+      fun: -13717.851364069025
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.0007276, 0.0003638])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 48
+      nit: 15
+     njev: 16
+   status: 0
+  success: True
+        x: array([  8.31731573, 249.07488008])
+###########################################################
+number of ibd segments: 4881
+mean of observed segments: 8.820879788468625
+split time from exp fit: 18.591(17.914 - 19.267)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00 -5.55111512e-17]
+ [ 1.77635684e-15  1.00000000e+00]]
+###########################################################
+split time: 4.32(2.39 - 6.26)
+ancestral pop size: 263.12(250.8 - 275.44)
+curr_min: -14532.243247346867
+      fun: -14532.243247346867
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0001819,  0.       ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 60
+      nit: 18
+     njev: 20
+   status: 0
+  success: True
+        x: array([  4.3231289 , 263.12225189])
+###########################################################
+number of ibd segments: 4779
+mean of observed segments: 8.41422925277082
+split time from exp fit: 19.59(18.894 - 20.287)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00  0.00000000e+00]
+ [-3.55271368e-15  1.00000000e+00]]
+###########################################################
+split time: 6.75(5.44 - 8.05)
+ancestral pop size: 249.15(236.39 - 261.92)
+curr_min: -14544.443712706337
+      fun: -14544.443712706337
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.00127329, -0.0001819 ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 81
+      nit: 17
+     njev: 27
+   status: 0
+  success: True
+        x: array([  6.74594684, 249.15373844])
+###########################################################
+number of ibd segments: 4974
+mean of observed segments: 8.682106015895565
+split time from exp fit: 18.769(18.097 - 19.441)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1.00000000e+00 5.55111512e-17]
+ [1.77635684e-15 1.00000000e+00]]
+###########################################################
+split time: 4.88(3.19 - 6.57)
+ancestral pop size: 254.21(242.2 - 266.22)
+curr_min: -14986.513565615218
+      fun: -14986.513565615218
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.       , 0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 54
+      nit: 17
+     njev: 18
+   status: 0
+  success: True
+        x: array([  4.88029423, 254.2118448 ])
+###########################################################
+number of ibd segments: 4464
+mean of observed segments: 8.674307855126603
+split time from exp fit: 19.119(18.401 - 19.837)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1.00000000e+00 5.55111512e-17]
+ [0.00000000e+00 1.00000000e+00]]
+###########################################################
+split time: 5.63(4.06 - 7.2)
+ancestral pop size: 280.79(266.34 - 295.25)
+curr_min: -12963.04884552639
+      fun: -12963.04884552639
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.01036824, -0.00090949])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 39
+      nit: 12
+     njev: 13
+   status: 0
+  success: True
+        x: array([  5.63203897, 280.79276386])
+###########################################################
+number of ibd segments: 4855
+mean of observed segments: 8.679316699968219
+split time from exp fit: 19.148(18.46 - 19.836)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1.00000000e+00 2.77555756e-17]
+ [0.00000000e+00 1.00000000e+00]]
+###########################################################
+split time: 5.72(4.23 - 7.21)
+ancestral pop size: 256.58(243.85 - 269.32)
+curr_min: -14498.282342942734
+      fun: -14498.282342942734
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.0001819, 0.       ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 54
+      nit: 17
+     njev: 18
+   status: 0
+  success: True
+        x: array([  5.71903532, 256.58114425])
+###########################################################
+number of ibd segments: 4811
+mean of observed segments: 8.806159348768787
+split time from exp fit: 19.472(18.772 - 20.172)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1.00000000e+00 0.00000000e+00]
+ [3.55271368e-15 1.00000000e+00]]
+###########################################################
+split time: 6.31(4.91 - 7.7)
+ancestral pop size: 256.84(243.66 - 270.02)
+curr_min: -14233.654347998094
+      fun: -14233.654347998094
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0001819, -0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 42
+      nit: 13
+     njev: 14
+   status: 0
+  success: True
+        x: array([  6.3066804 , 256.83646402])
+###########################################################
+number of ibd segments: 4861
+mean of observed segments: 8.69833287628311
+split time from exp fit: 19.888(19.19 - 20.587)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00  2.77555756e-17]
+ [-3.55271368e-15  1.00000000e+00]]
+###########################################################
+split time: 7.06(5.79 - 8.34)
+ancestral pop size: 243.99(231.28 - 256.69)
+curr_min: -14808.316480781616
+      fun: -14808.316480781616
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([ 0.       , -0.0003638])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 57
+      nit: 17
+     njev: 19
+   status: 0
+  success: True
+        x: array([  7.06397739, 243.98507207])
+###########################################################
+number of ibd segments: 4484
+mean of observed segments: 8.617035717554723
+split time from exp fit: 19.861(19.132 - 20.59)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00 -5.55111512e-17]
+ [ 3.55271368e-15  1.00000000e+00]]
+###########################################################
+split time: 6.94(5.59 - 8.28)
+ancestral pop size: 267.98(253.5 - 282.46)
+curr_min: -13222.835498477827
+      fun: -13222.835498477827
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([ 0.       , -0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 114
+      nit: 18
+     njev: 38
+   status: 0
+  success: True
+        x: array([  6.93674871, 267.98121262])
+###########################################################
+number of ibd segments: 4938
+mean of observed segments: 8.749786786380929
+split time from exp fit: 18.944(18.263 - 19.625)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1.00000000e+00 5.55111512e-17]
+ [0.00000000e+00 1.00000000e+00]]
+###########################################################
+split time: 5.31(3.73 - 6.89)
+ancestral pop size: 256.21(243.73 - 268.68)
+curr_min: -14684.917129526755
+      fun: -14684.917129526755
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0003638, -0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 54
+      nit: 17
+     njev: 18
+   status: 0
+  success: True
+        x: array([  5.30793632, 256.20666426])
+###########################################################
+number of ibd segments: 4911
+mean of observed segments: 8.713110537542313
+split time from exp fit: 19.0(18.317 - 19.684)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1.00000000e+00 2.77555756e-17]
+ [0.00000000e+00 1.00000000e+00]]
+###########################################################
+split time: 5.63(4.14 - 7.12)
+ancestral pop size: 255.51(242.97 - 268.05)
+curr_min: -14583.287404300789
+      fun: -14583.287404300789
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.       , 0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 54
+      nit: 17
+     njev: 18
+   status: 0
+  success: True
+        x: array([  5.62617   , 255.50935516])
+###########################################################
+number of ibd segments: 4532
+mean of observed segments: 8.478616692613294
+split time from exp fit: 19.935(19.21 - 20.66)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 7.13(5.81 - 8.44)
+ancestral pop size: 262.16(247.96 - 276.37)
+curr_min: -13494.780267951268
+      fun: -13494.780267951268
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0001819,  0.       ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 60
+      nit: 17
+     njev: 20
+   status: 0
+  success: True
+        x: array([  7.12764991, 262.16421605])
+###########################################################
+number of ibd segments: 5084
+mean of observed segments: 8.725923620527963
+split time from exp fit: 18.75(18.086 - 19.415)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00 -5.55111512e-17]
+ [-1.77635684e-15  1.00000000e+00]]
+###########################################################
+split time: 5.3(3.79 - 6.81)
+ancestral pop size: 246.36(234.79 - 257.93)
+curr_min: -15369.208725400447
+      fun: -15369.208725400447
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.0003638, 0.0005457])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 51
+      nit: 16
+     njev: 17
+   status: 0
+  success: True
+        x: array([  5.2973772 , 246.35934115])
+###########################################################
+number of ibd segments: 4965
+mean of observed segments: 8.945845203429956
+split time from exp fit: 18.914(18.234 - 19.593)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1.00000000e+00 5.55111512e-17]
+ [0.00000000e+00 1.00000000e+00]]
+###########################################################
+split time: 4.93(3.21 - 6.65)
+ancestral pop size: 257.88(245.42 - 270.35)
+curr_min: -14740.792819082668
+      fun: -14740.792819082668
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0003638, -0.0005457])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 129
+      nit: 21
+     njev: 43
+   status: 0
+  success: True
+        x: array([  4.92883888, 257.88471015])
+###########################################################
+/mnt/archgen/users/yilei/IBD/analytic.py:40: RuntimeWarning: invalid value encountered in multiply
+  loglik_each_bin = histogram*np.log(lambdas) - lambdas
+number of ibd segments: 4672
+mean of observed segments: 8.428322045181972
+split time from exp fit: 18.815(18.124 - 19.507)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1.00000000e+00 2.77555756e-17]
+ [0.00000000e+00 1.00000000e+00]]
+###########################################################
+split time: 5.22(3.61 - 6.83)
+ancestral pop size: 267.0(253.94 - 280.05)
+curr_min: -13940.20638703896
+      fun: -13940.20638703896
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0005457, -0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 60
+      nit: 17
+     njev: 20
+   status: 0
+  success: True
+        x: array([  5.21917586, 266.99615342])
+###########################################################
+number of ibd segments: 5113
+mean of observed segments: 8.53806593133923
+split time from exp fit: 20.347(19.656 - 21.038)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 8.01(6.86 - 9.16)
+ancestral pop size: 225.0(213.17 - 236.83)
+curr_min: -15778.930090932452
+      fun: -15778.930090932452
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0005457, -0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 75
+      nit: 16
+     njev: 25
+   status: 0
+  success: True
+        x: array([  8.01047347, 225.00008462])
+###########################################################
+number of ibd segments: 4802
+mean of observed segments: 8.925339789118926
+split time from exp fit: 19.332(18.632 - 20.032)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1.00000000e+00 5.55111512e-17]
+ [0.00000000e+00 1.00000000e+00]]
+###########################################################
+split time: 6.17(4.76 - 7.57)
+ancestral pop size: 259.71(246.56 - 272.87)
+curr_min: -14082.033730830879
+      fun: -14082.033730830879
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.00090949, 0.0001819 ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 66
+      nit: 18
+     njev: 22
+   status: 0
+  success: True
+        x: array([  6.16579886, 259.71418189])
+###########################################################
+number of ibd segments: 5249
+mean of observed segments: 8.841843012049871
+split time from exp fit: 19.104(18.442 - 19.767)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 5.58(4.12 - 7.05)
+ancestral pop size: 238.22(226.86 - 249.58)
+curr_min: -15991.572697341855
+      fun: -15991.572697341855
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0005457, -0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 54
+      nit: 17
+     njev: 18
+   status: 0
+  success: True
+        x: array([  5.5822934 , 238.21684801])
+###########################################################
+number of ibd segments: 5397
+mean of observed segments: 8.671354473412004
+split time from exp fit: 19.081(18.43 - 19.731)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 5.74(4.35 - 7.13)
+ancestral pop size: 228.77(218.1 - 239.45)
+curr_min: -16721.792389821258
+      fun: -16721.792389821258
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0003638,  0.0003638])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 81
+      nit: 17
+     njev: 27
+   status: 0
+  success: True
+        x: array([  5.73883491, 228.77354846])
+###########################################################
+number of ibd segments: 4888
+mean of observed segments: 8.533161712364473
+split time from exp fit: 19.476(18.789 - 20.164)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00  0.00000000e+00]
+ [-3.55271368e-15  1.00000000e+00]]
+###########################################################
+split time: 6.31(4.95 - 7.68)
+ancestral pop size: 247.07(234.64 - 259.51)
+curr_min: -14953.161237966327
+      fun: -14953.161237966327
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([ 0.       , -0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 54
+      nit: 17
+     njev: 18
+   status: 0
+  success: True
+        x: array([  6.31168374, 247.0748922 ])
+###########################################################
+number of ibd segments: 4768
+mean of observed segments: 8.885850324091047
+split time from exp fit: 18.744(18.055 - 19.432)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00 -2.77555756e-17]
+ [-1.77635684e-15  1.00000000e+00]]
+###########################################################
+split time: 5.07(3.41 - 6.72)
+ancestral pop size: 266.6(253.67 - 279.54)
+curr_min: -14017.087189437289
+      fun: -14017.087189437289
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0003638, -0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 69
+      nit: 16
+     njev: 23
+   status: 0
+  success: True
+        x: array([  5.06566241, 266.60421309])
+###########################################################
+number of ibd segments: 4679
+mean of observed segments: 8.742983823854452
+split time from exp fit: 18.922(18.226 - 19.619)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 5.62(4.12 - 7.12)
+ancestral pop size: 266.68(253.45 - 279.91)
+curr_min: -13789.881233859667
+      fun: -13789.881233859667
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0007276, -0.0005457])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 51
+      nit: 16
+     njev: 17
+   status: 0
+  success: True
+        x: array([  5.62299764, 266.67977064])
+###########################################################
+number of ibd segments: 4504
+mean of observed segments: 8.475449527437949
+split time from exp fit: 19.503(18.787 - 20.219)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 6.56(5.2 - 7.93)
+ancestral pop size: 266.51(252.53 - 280.49)
+curr_min: -13443.507729928977
+      fun: -13443.507729928977
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0001819,  0.       ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 57
+      nit: 17
+     njev: 19
+   status: 0
+  success: True
+        x: array([  6.5644117 , 266.50861852])
+###########################################################
+number of ibd segments: 4658
+mean of observed segments: 8.704130352001947
+split time from exp fit: 18.281(17.594 - 18.968)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 3.7(1.39 - 6.0)
+ancestral pop size: 278.85(266.05 - 291.65)
+curr_min: -13620.292057620662
+      fun: -13620.292057620662
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([ 0.0003638, -0.0005457])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 51
+      nit: 16
+     njev: 17
+   status: 0
+  success: True
+        x: array([  3.6973853 , 278.84710037])
+###########################################################
+number of ibd segments: 5123
+mean of observed segments: 8.882909859518517
+split time from exp fit: 19.365(18.689 - 20.041)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00 -2.77555756e-17]
+ [ 0.00000000e+00  1.00000000e+00]]
+###########################################################
+split time: 6.37(5.05 - 7.69)
+ancestral pop size: 239.83(228.01 - 251.64)
+curr_min: -15446.072678330976
+      fun: -15446.072678330976
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.00181899, 0.0001819 ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 60
+      nit: 17
+     njev: 20
+   status: 0
+  success: True
+        x: array([  6.37050464, 239.82599516])
+###########################################################
+number of ibd segments: 4832
+mean of observed segments: 8.70284616131844
+split time from exp fit: 18.745(18.061 - 19.429)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 5.16(3.56 - 6.75)
+ancestral pop size: 262.57(249.95 - 275.2)
+curr_min: -14251.009546561689
+      fun: -14251.009546561689
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.00527507, 0.0003638 ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 51
+      nit: 16
+     njev: 17
+   status: 0
+  success: True
+        x: array([  5.15616269, 262.57215421])
+###########################################################
+number of ibd segments: 5258
+mean of observed segments: 8.916419555975109
+split time from exp fit: 18.536(17.883 - 19.19)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00 -5.55111512e-17]
+ [ 1.77635684e-15  1.00000000e+00]]
+###########################################################
+split time: 4.45(2.66 - 6.23)
+ancestral pop size: 244.77(233.77 - 255.77)
+curr_min: -15853.204133243386
+      fun: -15853.204133243386
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.0007276, 0.0005457])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 54
+      nit: 17
+     njev: 18
+   status: 0
+  success: True
+        x: array([  4.44537255, 244.77050895])
+###########################################################
+number of ibd segments: 4998
+mean of observed segments: 8.852227576018675
+split time from exp fit: 18.587(17.916 - 19.257)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 4.66(2.92 - 6.4)
+ancestral pop size: 256.73(244.79 - 268.67)
+curr_min: -14844.175526724623
+      fun: -14844.175526724623
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.       , 0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 54
+      nit: 17
+     njev: 18
+   status: 0
+  success: True
+        x: array([  4.6628275 , 256.73041027])
+###########################################################
+number of ibd segments: 4993
+mean of observed segments: 8.627134892597727
+split time from exp fit: 19.81(19.119 - 20.5)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00  0.00000000e+00]
+ [-3.55271368e-15  1.00000000e+00]]
+###########################################################
+split time: 6.94(5.67 - 8.21)
+ancestral pop size: 240.06(227.75 - 252.37)
+curr_min: -15178.600419959032
+      fun: -15178.600419959032
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([ 0.0003638, -0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 57
+      nit: 17
+     njev: 19
+   status: 0
+  success: True
+        x: array([  6.94050784, 240.06099332])
+###########################################################
+number of ibd segments: 4838
+mean of observed segments: 8.361298415605892
+split time from exp fit: 19.687(18.992 - 20.382)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 6.84(5.56 - 8.13)
+ancestral pop size: 245.99(233.37 - 258.61)
+curr_min: -14744.05004732625
+      fun: -14744.05004732625
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.00218279,  0.        ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 57
+      nit: 17
+     njev: 19
+   status: 0
+  success: True
+        x: array([  6.84495453, 245.98969284])
+###########################################################
+number of ibd segments: 4779
+mean of observed segments: 8.796043888889272
+split time from exp fit: 18.816(18.126 - 19.506)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 5.34(3.77 - 6.9)
+ancestral pop size: 265.11(252.15 - 278.06)
+curr_min: -14012.582525305199
+      fun: -14012.582525305199
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.0007276, 0.       ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 72
+      nit: 16
+     njev: 24
+   status: 0
+  success: True
+        x: array([  5.3371699 , 265.10513287])
+###########################################################
+number of ibd segments: 4785
+mean of observed segments: 8.648099123773326
+split time from exp fit: 19.04(18.351 - 19.729)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[ 1.00000000e+00 -5.55111512e-17]
+ [ 0.00000000e+00  1.00000000e+00]]
+###########################################################
+split time: 5.81(4.36 - 7.26)
+ancestral pop size: 257.96(245.23 - 270.69)
+curr_min: -14320.826685936554
+      fun: -14320.826685936554
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.00454747, 0.00090949])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 51
+      nit: 16
+     njev: 17
+   status: 0
+  success: True
+        x: array([  5.81076434, 257.96033183])
+###########################################################
+number of ibd segments: 4866
+mean of observed segments: 8.709507692479333
+split time from exp fit: 18.481(17.806 - 19.155)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 4.4(2.54 - 6.25)
+ancestral pop size: 262.96(250.8 - 275.12)
+curr_min: -14477.91945455814
+      fun: -14477.91945455814
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([-0.0005457,  0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 198
+      nit: 28
+     njev: 66
+   status: 0
+  success: True
+        x: array([  4.39567998, 262.9602077 ])
+###########################################################
+number of ibd segments: 4391
+mean of observed segments: 8.9897604174778
+split time from exp fit: 19.834(19.094 - 20.573)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 6.98(5.62 - 8.34)
+ancestral pop size: 276.35(261.16 - 291.55)
+curr_min: -12677.853339808657
+      fun: -12677.853339808657
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.       , 0.0001819])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 66
+      nit: 16
+     njev: 22
+   status: 0
+  success: True
+        x: array([  6.97936422, 276.35252484])
+###########################################################
+number of ibd segments: 4663
+mean of observed segments: 8.827561749306334
+split time from exp fit: 18.538(17.846 - 19.229)
+hessian info: info(error_estimate=array([[0.00127062, 0.00127062],
+       [0.00127062, 0.00127062]]), final_step=array([[1.e-04, 1.e-04],
+       [1.e-04, 1.e-04]]), index=array([0, 1, 2, 3]))
+inverse of hessian: [[1. 0.]
+ [0. 1.]]
+###########################################################
+split time: 4.42(2.51 - 6.32)
+ancestral pop size: 275.66(262.54 - 288.79)
+curr_min: -13651.350723098421
+      fun: -13651.350723098421
+ hess_inv: <2x2 LbfgsInvHessProduct with dtype=float64>
+      jac: array([0.0001819, 0.       ])
+  message: 'CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH'
+     nfev: 54
+      nit: 17
+     njev: 18
+   status: 0
+  success: True
+        x: array([  4.41639488, 275.66386247])
+###########################################################
