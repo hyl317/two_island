@@ -66,6 +66,20 @@ def two_island_noGeneFlow_constNe_MLE(ibd_segments, minLen, maxLen, step, G, num
     return res.x, se
 
 def two_island_noGeneFlow_constNe_MLE_multiStart(ibd_segments, minLen, maxLen, step, G, numPairs):
+    """
+    ibd_segments: list
+        a list of IBD segment lengths 
+    minLen: float
+        minimum IBD length
+    maxLen: float
+        maximum IBD length
+    step: float
+        binning intervals (in cM). Recommend value is 0.1cM
+    G: list
+        a list of chromosome length (in cM)
+    numPairs: int
+        number of pairs of haplotype pairs (that is, 4*number of diploid sample pairs)
+    """
     # use only ibd segments between minLen and maxLen
     # bin all segments at bin size equal to step
     # all values in unit centiMorgan
