@@ -2,6 +2,7 @@ import msprime
 import itertools
 import numpy as np
 import sys
+import time
 import multiprocessing as mp
 from analytic import *
 
@@ -84,29 +85,8 @@ def ibd_segments_full_ARGs(ts, a, b, bps, cMs, maxGen=np.inf, minLen=4):
     for tree in trees_iter:
         left = bp2Morgan(tree.interval[0], bps, cMs)
         right = bp2Morgan(tree.interval[1], bps, cMs)
-        if right - left >= minLen and (tree.mrca(a,b) == -1 or (tree.mrca(a,b) != -1 and tree.tmrca(a,b) < maxGen)):
+        if right - left >= minLen and (tree.mrca(a,b) != -1 and tree.tmrca(a,b) < maxGen):
             segment_lens.append(right - left)
-    return segment_lens
-
-    tree = next(trees_iter)
-    last_mrca = tree.mrca(a, b)
-    last_pathA, last_pathB = getPath(tree, a, last_mrca), getPath(tree, a, last_mrca)
-    last_left = bp2Morgan(tree.interval[0], bps, cMs)
-    segment_lens = []
-    for tree in trees_iter:
-        mrca = tree.mrca(a, b)
-        pathA, pathB = getPath(tree, a, mrca), getPath(tree, b, mrca)
-        if mrca != last_mrca  or pathA != last_pathA or pathB != last_pathB:
-            left = bp2Morgan(tree.interval[0], bps, cMs)
-            if last_mrca <= maxGen and left - last_left >= minLen:
-                segment_lens.append(left - last_left)
-            last_mrca = mrca
-            last_left = left
-            last_pathA = pathA
-            last_pathB = pathB
-    # take care of the last segment
-    if last_mrca <= maxGen and cMs[-1] - last_left >= minLen:
-        segment_lens.append(cMs[-1] - last_left)
     return segment_lens
 
 
@@ -193,6 +173,41 @@ def ibd_segments_full_ARGs_cohort(ts, a, b, bps, cMs, maxGen=np.inf, minLen=4):
         segment_lens.append(cMs[-1] - last_left)
     return segment_lens
 
+def sort_merge(seglist):
+    if len(seglist) == 0:
+        return []
+    seglist = sorted(seglist, key=lambda seg:seg.left)
+    merged = []
+    prev_left = seglist[0].left
+    prev_right = seglist[0].right
+    prev_mrca = seglist[0].node
+    for seg in seglist[1:]:
+        if seg.node == prev_mrca:
+            prev_right = seg.right
+        else:
+            merged.append((prev_left, prev_right))
+            prev_left = seg.left
+            prev_right = seg.right
+            prev_mrca = seg.node
+    merged.append((prev_left, prev_right))
+    return merged
+
+
+def extractIBDbatch(ts, between, max_time, minLen, bkp_bp, bkp_cm):
+    segs = ts.ibd_segments(between=between, max_time=max_time, store_pairs=True, store_segments=True)
+    segment_lens = []
+    for pair, _ in segs.items():
+        for seg in segs[pair]:
+            # determine segment length (in cM)
+            bp1, bp2 = seg.left, seg.right
+            i, j = np.searchsorted(bkp_bp, bp1), np.searchsorted(bkp_bp, bp2)
+            seglen = bkp_cm[j] - bkp_cm[i]
+            if seglen >= minLen:
+                segment_lens.append(seglen)
+    return segment_lens
+
+
+
 def simAndGetIBD_two_island_chrom(sampling, demography, ch, end_time=500, random_seed=1, maxGen=np.inf, minLen=4.0):
     # read HapMap
     path2Map = f"/mnt/archgen/users/yilei/Data/Hapmap/genetic_map_GRCh37_chr{ch}.txt"
@@ -200,6 +215,7 @@ def simAndGetIBD_two_island_chrom(sampling, demography, ch, end_time=500, random
     bps, cMs = readHapMap(path2Map)
 
     ploidy = 2
+    t1 = time.time()
     if end_time < np.inf:
         ts = msprime.sim_ancestry(sampling, demography=demography, recombination_rate=recombMap, \
             record_provenance=False, ploidy=ploidy, end_time=end_time, random_seed=random_seed)
@@ -207,6 +223,7 @@ def simAndGetIBD_two_island_chrom(sampling, demography, ch, end_time=500, random
         print(f'simulating ARG until TMRCA...')
         ts = msprime.sim_ancestry(sampling, demography=demography, recombination_rate=recombMap, \
             record_provenance=False, ploidy=ploidy, random_seed=random_seed)
+    print(f'time spent in simulating tree seq: {time.time()-t1}')
     ibd = []
     numPopA, numPopB = sampling['A'], sampling['B']
     for id1, id2 in itertools.product(range(ploidy*numPopA), range(ploidy*numPopA, ploidy*(numPopA + numPopB))):
@@ -216,6 +233,15 @@ def simAndGetIBD_two_island_chrom(sampling, demography, ch, end_time=500, random
     return ibd
 
 
+
+
+
+
+
+
+
+
+
 def simAndGetIBD_two_island_chrom_fullARG(sampling, demography, ch, end_time=500, random_seed=1, maxGen=np.inf, minLen=4.0):
     # read HapMap
     path2Map = f"/mnt/archgen/users/yilei/Data/Hapmap/genetic_map_GRCh37_chr{ch}.txt"
@@ -223,6 +249,7 @@ def simAndGetIBD_two_island_chrom_fullARG(sampling, demography, ch, end_time=500
     bps, cMs = readHapMap(path2Map)
 
     ploidy = 2
+    t1 = time.time()
     if end_time < np.inf:
         ts = msprime.sim_ancestry(sampling, demography=demography, recombination_rate=recombMap, \
             record_provenance=False, ploidy=ploidy, end_time=end_time, random_seed=random_seed, record_full_arg=True)
@@ -230,6 +257,7 @@ def simAndGetIBD_two_island_chrom_fullARG(sampling, demography, ch, end_time=500
         print(f'simulating ARG until TMRCA...')
         ts = msprime.sim_ancestry(sampling, demography=demography, recombination_rate=recombMap, \
             record_provenance=False, ploidy=ploidy, random_seed=random_seed, record_full_arg=True)
+    print(f'time spent in simulating tree seq: {time.time()-t1}')
     ibd = []
     numPopA, numPopB = sampling['A'], sampling['B']
     for id1, id2 in itertools.product(range(ploidy*numPopA), range(ploidy*numPopA, ploidy*(numPopA + numPopB))):
@@ -237,6 +265,30 @@ def simAndGetIBD_two_island_chrom_fullARG(sampling, demography, ch, end_time=500
 
     # save tree seq file
     return ibd
+
+
+def simAndGetIBD_two_island_chrom_fullARG_fast(sampling, demography, ch, end_time=500, random_seed=1, maxGen=np.inf, minLen=4.0):
+    # read HapMap
+    path2Map = f"/mnt/archgen/users/yilei/Data/Hapmap/genetic_map_GRCh37_chr{ch}.txt"
+    recombMap = msprime.RateMap.read_hapmap(path2Map)
+    bps, cMs = readHapMap(path2Map)
+
+    ploidy = 2
+    t1 = time.time()
+    if end_time < np.inf:
+        ts = msprime.sim_ancestry(sampling, demography=demography, recombination_rate=recombMap, \
+            record_provenance=False, ploidy=ploidy, end_time=end_time, random_seed=random_seed, record_full_arg=True)
+    else:
+        print(f'simulating ARG until TMRCA...')
+        ts = msprime.sim_ancestry(sampling, demography=demography, recombination_rate=recombMap, \
+            record_provenance=False, ploidy=ploidy, random_seed=random_seed, record_full_arg=True)
+    print(f'time spent in simulating tree seq: {time.time()-t1}')
+    ibd = []
+    numPopA, numPopB = sampling['A'], sampling['B']
+    ibd = extractIBDbatch(ts, [list(range(ploidy*numPopA)), list(range(ploidy*numPopA, ploidy*(numPopA + numPopB)))], maxGen, minLen, bps, cMs)
+    return ibd
+
+
 
 
 def simAndGetIBD_two_island_ind(sampling, demography, processes, chs=range(1,23), end_time=1000, random_seed=1, maxGen=np.inf, minLen=4.0, maxLen=15.0):
@@ -262,7 +314,9 @@ def simAndGetIBD_two_island_ind(sampling, demography, processes, chs=range(1,23)
 def simAndGetIBD_two_island_ind_fullARG(sampling, demography, processes, chs=range(1,23), end_time=1000, random_seed=1, maxGen=np.inf, minLen=5.0, maxLen=15.0, aggregated=None):
     if aggregated is None:
         prms = [[sampling, demography, ch, end_time, random_seed, maxGen, minLen] for ch in chs]
-        results = multi_run(simAndGetIBD_two_island_chrom_fullARG, prms, processes=processes, output=False)
+        t1 = time.time()
+        results = multi_run(simAndGetIBD_two_island_chrom_fullARG_fast, prms, processes=processes, output=False)
+        print(f'time spent in simulating tree seq and extracting ibd: {time.time()-t1}')
         aggregated = []
         for result in results:
             aggregated.extend(result)
@@ -274,7 +328,9 @@ def simAndGetIBD_two_island_ind_fullARG(sampling, demography, processes, chs=ran
         sys.exit()
     else:
         print(f'mean of observed segments: {np.mean(aggregated)}')
+        t1 = time.time()
         lambda_exp_mle, lambda_exp_se = two_island_noGeneFlow_constNe_truncExp(aggregated, minLen, maxLen)
         chrlens = np.array([286.279, 268.840, 223.361, 214.688, 204.089, 192.040, 187.221, 168.003, 166.359, 181.144, 158.219, 174.679, 125.706, 120.203, 141.860, 134.038, 128.491, 117.709, 107.734, 108.267, 62.786, 74.110])
         twoIsland_mle, twoIsland_se = two_island_noGeneFlow_constNe_MLE_multiStart(aggregated, minLen, maxLen, 0.1, chrlens, 2*sampling['A']*2*sampling['B'])
+        print(f'time spent in inference: {time.time()-t1}')
     return 50*lambda_exp_mle, 50*lambda_exp_se, twoIsland_mle, twoIsland_se, aggregated

@@ -35,8 +35,8 @@ if __name__ == '__main__':
     if not os.path.isdir(f'./IBD_pickle/T{args.T}_N{args.Ne}'):
         os.mkdir(f'./IBD_pickle/T{args.T}_N{args.Ne}')
 
-    sampling = {'A':10, 'B':10}
-    with open(f'./results/T{args.T}_N{args.Ne}_end{args.end}_fullARG.results', 'w') as out:
+    sampling = {'A':15, 'B':15}
+    with open(f'./results/T{args.T}_N{args.Ne}_end{args.end}_fullARG.n15.results', 'w') as out:
         out.write(f'#replicate\texp_mle\texp_se\t2island_T_mle\t2island_T_se\t2island_N_mle\t2island_N_se\n')
         for r in range(1, 1+args.r):
             exp_mle, exp_se, twoIsland_mle, twoIsland_se, aggregated = \
@@ -44,4 +44,4 @@ if __name__ == '__main__':
                     args.processes, end_time=args.end, random_seed=r, \
                         maxGen=np.inf, minLen=5.0, maxLen=15.0)
             out.write(f'batch{r}\t{round(exp_mle,3)}\t{round(exp_se,3)}\t{round(twoIsland_mle[0],3)}\t{round(twoIsland_se[0],3)}\t{round(twoIsland_mle[1],3)}\t{round(twoIsland_se[1],3)}\n')    
-            pickle.dump(aggregated, open(f'./IBD_pickle/T{args.T}_N{args.Ne}/ibd_batch{r}.pickle', 'wb'))
+            pickle.dump(aggregated, open(f'./IBD_pickle/T{args.T}_N{args.Ne}/ibd_batch{r}.n15.pickle', 'wb'))

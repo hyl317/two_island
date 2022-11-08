@@ -11,6 +11,8 @@
 #$ -V # load personal profile
 #$ -o $JOB_NAME.o.$JOB_ID.$TASK_ID
 #$ -t 1:21:1
+#$ -l 'h=!bionode0[1-9]'
+
 
 id=$SGE_TASK_ID
 id=$(($id-1))
